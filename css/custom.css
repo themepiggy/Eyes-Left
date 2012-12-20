@@ -1,0 +1,197 @@
+body {
+	background-color: #022f3c; /*004c5f;*/
+  color: #ccc;
+}
+
+a {
+  color:#008186;
+}
+
+a:hover {
+  color:#206374;
+}
+
+.span9 > div {
+  margin-bottom:30px;
+}
+
+.navbar-menu-button, .navbar-menu-button:hover{
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0E0E0E;
+  background-image: -moz-linear-gradient(top, #151515, #040404);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#151515), to(#040404));
+  background-image: -webkit-linear-gradient(top, #151515, #040404);
+  background-image: -o-linear-gradient(top, #151515, #040404);
+  background-image: linear-gradient(to bottom, #151515, #040404);
+  background-repeat: repeat-x;
+  border-color: #040404 #040404 black;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff151515', endColorstr='#ff040404', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 15px;
+  vertical-align: middle;
+  line-height: 20px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+
+.icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: whiteSmoke;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  margin-top:3px;
+  padding:0;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #004c5f; 
+  background-image: -moz-linear-gradient(top, #004c5f, #004c5f); 
+  background-image: -ms-linear-gradient(top, #004c5f, #004c5f); 
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#004c5f), to(#004c5f)); 
+  background-image: -webkit-linear-gradient(top, #004c5f, #004c5f); 
+  background-image: -o-linear-gradient(top, #004c5f, #004c5f); 
+  background-image: linear-gradient(top, #004c5f, #004c5f); 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004c5f', endColorstr='#004c5f', GradientType=0); 
+  background-repeat: repeat-x; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  border-radius: 4px; 
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 
+  inset 0 0px 0 rgba(0, 0, 0, 0); 
+  -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0); 
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), inset 0 0px 0 rgba(0, 0, 0, 0);
+  border-color:#004c5f;
+}
+
+.sidebar-nav {	
+  	left: 0;
+  	top: 0px;
+  	bottom: 0;
+  	position: fixed;
+  	width: 230px;
+  	background-color: #004c5f;
+
+}
+
+.sidebar-nav h1 {
+	color:#eee;
+	text-align: center;
+
+}
+
+.nav-list {
+	text-align:right;
+	padding-top:20px;
+	padding-left:0;
+	padding-right:0;
+}
+
+.nav-list li {
+	color: #C6E9F1;
+	padding:0px 30px 0px 0;
+	font-size: 20px;
+	line-height: 30px;
+
+}
+
+.nav-list li a {
+	color: #C6E9F1;
+	width:100%;
+	margin-left:-1px;
+
+}
+
+.nav-list > li > a:hover {
+	background-color:#206374;
+	color:#eee;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover {
+	background-color:#008186;
+}
+
+.footer {
+  text-align: right;
+}
+
+pre, code {
+  background-color: #e3e3e3;
+}
+
+@media (max-width: 979px) {
+  body {
+    margin-top:0px;
+  }
+  .sidebar-nav {
+    padding-top:0;
+    position: static;
+    margin-right: -20px;
+    margin-left: -20px;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:auto;
+    width:auto;
+    margin-top:-10px;
+  }
+  .nav-list {
+    text-align: center;
+    position: static;
+    height:0;
+    overflow:hidden;
+    /*display:none;*/
+  }
+  .nav-list > .active > a {
+    background-color:inherit;
+    color: #C6E9F1;
+  }
+  .nav-list > .active > a:hover {
+    background-color:#206374;
+  }
+  .menu-toggle {
+    float: right;
+    position:absolute;
+    display:block;
+    right:20px;
+
+  }
+}
+
+@media (min-width: 979px) {
+  body {
+    margin-top:60px;
+  }
+  .sidebar-nav {
+    padding-top:65px;
+    display:block;
+  }
+  .nav-list {
+    display:block;
+    height:auto;
+    overflow:visible;
+  }
+  .menu-toggle {
+    display:none;
+  }
+}
+

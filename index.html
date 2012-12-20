@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eyes Left, Personal Homepage from themepiggy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple home page with the menu aligned left">
+    <meta name="author" content="themepiggy">
+
+    <!-- styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".sidebar-nav">
+
+    <!-- MENU -->
+    <div id="sidenav" class="sidebar-nav">
+      <div class="menu-toggle">
+        <a class="btn navbar-menu-button" data-toggle="collapse" data-target=".nav-list">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </div>
+      <div class="logo">
+        <h1>Eyes Left</h1>
+      </div>
+      <div class="menu-items">
+        <ul class="nav nav-list">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#customisation">Customization</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- CONTENT -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <!--empty to space the content a bit-->
+        </div>
+        <div class="span9">
+          <div id="home" >
+            <h2>Welcome to Eyes Left</h2>
+            <p>Eyes Left is a content over chrome website designed for those who don't need the complexity of multiple pages. Eyes Left is, by design, a one page site with all content available on the page. Based on the popular Twitter Bootstrap, Eyes Left is also a responsive theme that takes advantage of media queries to layout elements for different resolutions.</p>
+            <p>Even though it is designed for smaller sites, Eyes Left understands that your content will logically fall into categories. To support this, a left hand side menu exists and will hot-link you to various portions of your content. If you prefer to read through it all though, Eyes Left will simply keep the menu in place and highlight the appropriate menu item as you scroll.</p>
+          </div>
+          <div id="customisation">
+            <h2>Customization</h2>
+            <p>Eyes Left uses a simple system of defining hash tags and divs to allow people using the site to quickly jump to the topic of their choice.</p>
+            <p>The source code is divided into two sections - the menu and the content. These sections are marked with HTML comments - <code>&lt;!-- MENU --&gt;</code> and <code>&lt;!-- CONTENT --&gt;</code>
+            <p>To edit the menu, simply open the index.html file and find the portion that looks like this:</p> 
+<pre><code>&lt;div class="menu-items"&gt;
+  &lt;ul class="nav nav-list"&gt;
+    &lt;li class="active"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#customisation"&gt;Customization&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <p>Note that each menu item has an <code>href</code> tag with a hash tag in it. Each hash tag binds to <code>div</code> which has an <code>id</code> with the same name as the hash tag.</p>
+            <p>So for example, we are currently in the "customization" section - in the menu, the code looks like this:</p>
+            <pre><code>&lt;li&gt;&lt;a href="#customisation"&gt;Customization&lt;/a&gt;&lt;/li&gt;</code></pre>
+            <p>Looking to the content section, we can find a div with the relevant id:</p>
+            <pre><code>&lt;div id="customisation"&gt;</code></pre>
+            <p>This wires up the "Customization" menu item to the content on the page and allows browsers to "jump" to the right content.</p>
+            <p>This menu system is simple to extend - adding a new item is a matter of creating a new "li" item with a hash tag - for example adding a new menu item like this</p>
+            <pre><code>&lt;li&gt;&lt;a href="#lolcats"&gt;Pictures of moggy&lt;/a&gt;&lt;/li</code></pre>
+            <p>Will create a new menu item with the title "Pictures of moggy". All that you need to do to add the content is surround it with a div that has an id tag of "lolcats". For example</p>
+            <pre><code>&lt;div id="lolcats"&gt;My funny kitty kat pictures&lt;/div&gt;</code></pre>
+            <p>And hey-presto, your new menu item will automatically be wired up.</p>
+          </div>
+          <div id="contact" >
+            <h2>Get in touch</h2>
+            <p>Feel free to <a href="http://themepiggy.com/contact">contact me</a></p>
+          </div>
+        </div><!-- /span9 -->
+      </div> <!-- /row -->
+    </div><!-- container-fluid -->
+    <div class="container-fluid footer">
+      <div class="row-fluid">
+        <div class="span3">
+        </div>
+        <div class="span9">
+          <a href="http://themepiggy.com">Eyes Left</a> theme by themepiggy
+        </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  </body>
+</html>
